@@ -618,4 +618,76 @@ iframe {
     transform: translateY(-120vh) rotate(720deg);
     opacity: 0;
   }
+
+}
+
+/* --- АДАПТИВНЫЕ СТИЛИ ДЛЯ ДРЕСС-КОДА --- */
+.dress-code-exact {
+  padding: 25px 15px;
+}
+
+.dress-block {
+  margin-top: 30px;
+}
+
+.dress-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.dress-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dress-note {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 5px 0 15px;
+  padding: 0 10px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .dress-code-exact {
+    padding: 20px 10px;
+    margin: 30px 0;
+  }
+  
+  .dress-block h3 {
+    font-size: 1.4rem;
+  }
+  
+  .dress-note {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+  
+  .dress-photo {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .dress-code-exact h2 {
+    font-size: 1.8rem;
+  }
+  
+  .dress-block h3 {
+    font-size: 1.3rem;
+  }
+  
+  .dress-text p {
+    font-size: 1.1rem;
+    padding: 0 5px;
+  }
+  
+  .dress-note {
+    font-size: 0.95rem;
+  }
 }
